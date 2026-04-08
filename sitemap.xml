@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/posts/kurumin-linux/</loc>
-    <lastmod>2026-04-08T20:34:19-03:00</lastmod>
+    <loc>https://thxgo.github.io/gh-deployment-workflow/posts/kurumin-linux/</loc>
+    <lastmod>2026-04-08T20:41:52-03:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
-    <lastmod>2026-04-08T20:34:19-03:00</lastmod>
+    <loc>https://thxgo.github.io/gh-deployment-workflow/</loc>
+    <lastmod>2026-04-08T20:41:52-03:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/</loc>
-    <lastmod>2026-04-08T20:34:19-03:00</lastmod>
+    <loc>https://thxgo.github.io/gh-deployment-workflow/posts/</loc>
+    <lastmod>2026-04-08T20:41:52-03:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://thxgo.github.io/gh-deployment-workflow/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://thxgo.github.io/gh-deployment-workflow/tags/</loc>
   </url>
 </urlset>

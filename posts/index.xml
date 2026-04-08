@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Project</title>
-    <link>https://example.org/posts/</link>
+    <link>https://thxgo.github.io/gh-deployment-workflow/posts/</link>
     <description>Recent content in Posts on My New Hugo Project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 20:34:19 -0300</lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Apr 2026 20:41:52 -0300</lastBuildDate>
+    <atom:link href="https://thxgo.github.io/gh-deployment-workflow/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kurumin Linux</title>
-      <link>https://example.org/posts/kurumin-linux/</link>
+      <link>https://thxgo.github.io/gh-deployment-workflow/posts/kurumin-linux/</link>
       <pubDate>Wed, 08 Apr 2026 19:30:42 -0300</pubDate>
-      <guid>https://example.org/posts/kurumin-linux/</guid>
-      <description>&lt;h1 id=&#34;kurumin-linux&#34;&gt;Kurumin Linux&lt;/h1&gt;&#xA;&lt;p&gt;Uma das distribuições Linux mais importantes do Brasil&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://example.org/images/kuruminlinux.png&#34; alt=&#34;kurumin&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://thxgo.github.io/gh-deployment-workflow/posts/kurumin-linux/</guid>
+      <description>&lt;h1 id=&#34;kurumin-linux&#34;&gt;Kurumin Linux&lt;/h1&gt;&#xA;&lt;p&gt;Uma das distribuições Linux mais importantes do Brasil&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://thxgo.github.io/gh-deployment-workflow/images/kuruminlinux.png&#34; alt=&#34;kurumin&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
