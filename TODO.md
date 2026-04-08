@@ -2,7 +2,7 @@
 
 ## Features
 
-- [ ] Use Hugo to generate a static website
+- [ ] Update deploy workflow file after adding Hugo generated website
 - [ ] Run tidy on test.yml
 
 ## Improvements
@@ -11,4 +11,5 @@
 
 ## DONE
 
-- [x] Create a test.yml worflow file
+- [x] Use Hugo to generate a static website
+- [x] Create a test.yml workflow file
