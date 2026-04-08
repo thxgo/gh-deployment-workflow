@@ -6,8 +6,8 @@ title = 'Kurumin Linux'
 
 # Kurumin Linux
 
-Uma das distribuições Linux mais importantes do Brasil
+Kurumin Tux
 
-![kurumin](/images/kuruminlinux.png)
+![kurumin](images/kuruminlinux.png)
 
 
