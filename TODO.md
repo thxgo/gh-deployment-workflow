@@ -1,8 +1,12 @@
 ## TODO
 
+## Bugs
+
+- [ ] Fix image not deploying on GitHub Page
+
 ## Features
 
-- [ ] Update deploy workflow file after adding Hugo generated website
+- [ ] Update test.yml workflow for Hugo website
 - [ ] Run tidy on test.yml
 
 ## Improvements
@@ -11,5 +15,6 @@
 
 ## DONE
 
+- [x] Update deploy workflow file after adding Hugo generated website
 - [x] Use Hugo to generate a static website
 - [x] Create a test.yml workflow file
