@@ -8,6 +8,8 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    outputs:
+      artifact-name: site
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -23,23 +25,24 @@ jobs:
         working-directory: ./darktheme
       - name: Check if index.html exists
         run: test -f ./darktheme/public/index.html
+      - name: Check for broken links
+        run: |
+          grep -r 'href=' ./darktheme/public/index.html | grep -v 'http' | grep -v '#'
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: ./darktheme/public
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
-          submodules: true
-      - name: Setup Hugo
-        uses: hugo-actions/actions-hugo@v2
-        with:
-          hugo-version: '0.160.1'
-          extended: true
-      - name: Build site
-        run: hugo
-        working-directory: ./darktheme    
+          name: site
+          path: ./public
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
