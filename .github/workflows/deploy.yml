@@ -1,33 +1,45 @@
-name: Deploy to GitHub Pages
-
+name: Test and Deploy to GitHub Pages
 on:
   push:
     branches:
       - main
-
 permissions:
   contents: write
-
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           submodules: true
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.160.1'
           extended: true
-
       - name: Build site
         run: hugo
         working-directory: ./darktheme
+      - name: Check if index.html exists
+        run: test -f ./darktheme/public/index.html
 
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: Setup Hugo
+        uses: hugo-actions/actions-hugo@v2
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+      - name: Build site
+        run: hugo
+        working-directory: ./darktheme    
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
